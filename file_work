@@ -1,0 +1,16 @@
+Data -> Stores all image files
+Results -> Stores the segmented regions
+SuppressionResults -> Stores the processed segmented files
+
+bana_Rect.m -> gives orientation of rectangle bounding the segment
+blending.m -> blends the word in the image using poisson image blending
+getboundary.m -> provides the region corr. to segment_number and its boundary
+imgrad.m -> gradient util for poisson image blending
+make_rect.m -> makes a rectangular mask given corner points
+max_areaRect.m -> largest upright rectangle in a binary image
+maxHist.m -> util for max_areaRect.m
+merger.m -> processes the word image and target image for blending
+pixelWidth.m -> to change the boldness of the plain-text image
+PoissonGaussSeidel.m -> util for poisson image blending
+PoissonJacobi.m -> util for poisson image blending
+render.py -> python script to make a plain-text image

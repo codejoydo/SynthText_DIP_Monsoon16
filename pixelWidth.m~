@@ -1,0 +1,5 @@
+function returnIm=pixelWidth(im)
+
+im=imclose(im,strel('line',0,3);
+
+end

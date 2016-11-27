@@ -1,0 +1,15 @@
+function merged=merger(SX,SY,EX,EY,target,source,slope)
+%% Merge the text and the source.
+
+L=abs(SX-EX)+1;
+B=abs(SY-EY)+1;
+
+source=imresize(source,[L B]);
+
+disp([SX,EX,SY,EY]);
+disp([L,B]);
+disp(size(source));
+
+merged=blending(SX,SY,EX,EY,target,source,slope);
+
+end
