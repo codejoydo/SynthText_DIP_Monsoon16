@@ -1,0 +1,12 @@
+text_image = imread('Data/text4.tif');
+x1 = [1;1;size(text_image,1);size(text_image,1)];
+y1 = [1;size(text_image,2);1;size(text_image,2)];
+target = imread('Data/test12.jpg');
+% imshow(target);
+% [y2,x2] = ginput(4);
+% close all;
+pts1 = [x1,y1];
+pts2 = [x2,y2];
+H = get_homography(pts1,pts1);
+out = tform(text_image,x,y,H,inds);
+figure,imshow(out);
